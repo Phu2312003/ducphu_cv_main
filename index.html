@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DucPhu Portfolio</title>
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <link rel="icon" href="./assets/rocket-icon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--------------- 
+      Header
+    ----------------->
+    <header>
+      <div class="container header__container">
+        <!-- left column -->
+        <div class="header__column--left">
+          <!-- avatar -->
+          <div class="header__img"></div>
+
+          <div class="header__content--left">
+            <h2 class="header__title">Lương Đức Phú</h2>
+            <div class="header__badge_container">
+              <div class="badge" data-i18n="headerBadgePrimary">
+                Lập trình web, mobile app
+              </div>
+              <div class="badge" data-i18n="headerBadgeSecondary">
+                Fullstack developer
+              </div>
+            </div>
+            <p>
+              <span data-i18n="headerIntroPrefix">
+                Mong muốn ứng tuyển vị trí
+              </span>
+              <span class="header__highlight">fresher Developer</span>
+              <span data-i18n="headerIntroSuffix">
+                trong lĩnh vực phát triển web và mobile apps.
+              </span>
+            </p>
+          </div>
+        </div>
+
+        <!-- right column -->
+        <div class="header__column--right">
+          <div
+            class="language-switcher"
+            role="group"
+            aria-label="Language switcher"
+          >
+            <button
+              type="button"
+              class="is-active"
+              data-lang-switch="vi"
+              aria-pressed="true"
+            >
+              VI
+            </button>
+            <button type="button" data-lang-switch="en" aria-pressed="false">
+              EN
+            </button>
+          </div>
+          <h2 class="header__title" data-i18n="contactTitle">
+            Thông Tin Liên Hệ
+          </h2>
+          <p>
+            <span data-i18n="emailLabel">Gửi email cho mình tại:</span>
+            <span class="header__highlight">luongducphucv@gmail.com</span>
+          </p>
+          <p>
+            <span data-i18n="phoneLabel">Gọi cho mình tại:</span>
+            <span class="header__highlight">0917829075</span>
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!--------------------------------- 
+      About Me - Giới Thiệu Bản Thân
+    ----------------------------------->
+    <section class="aboutMe__section">
+      <!-- Hình động 2 bên -->
+      <img src="./assets/rocket-icon.svg" alt="rocket icon" />
+
+      <img src="./assets/laptop-icon.svg" alt="laptop icon" />
+
+      <!-- Nội dung chính -->
+      <div class="aboutMe__container">
+        <div class="aboutMe__content_container">
+          <h1 class="section__title" data-i18n="aboutTitle">
+            Giới Thiệu Bản Thân
+          </h1>
+
+          <p class="section__description" data-i18n="aboutDescription">
+            Xin chào! Mình là sinh viên năm cuối trường đại học Ngoại Ngữ Và Tin
+            Học. Mình có niềm đam mê với công việc lập trình và vô cùng yêu
+            thích việc tạo ra các trang web và mobile app hiện đại và có tính
+            ứng dụng cao.
+          </p>
+
+          <div class="CTA">
+            <a
+              href="./assets/CV_Luong_Duc_Phu_Front_Fullstack_Developer.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="primaryButton"
+              download
+              data-i18n="downloadCv"
+              >Tải CV</a
+            >
+
+            <a
+              href="#ProjectContainer"
+              class="outlineButton"
+              data-i18n="viewProjects"
+            >
+              Xem Dự Án
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------------------- 
+      Skills - Kỹ Năng
+    ----------------------------------->
+    <section class="skills__section">
+      <div class="container skills__container">
+        <!-- header -->
+        <div class="section__header">
+          <h1 class="section__title" data-i18n="skillsTitle">
+            Kỹ năng & Chuyên môn
+          </h1>
+
+          <p class="section__description" data-i18n="skillsDescription">
+            Fullstack developer với 1+ năm làm dự án cá nhân. Vững HTML, CSS,
+            JavaScript, React và UX/UI responsive. Có kiến thức REST API và
+            backend với PHP, DB, Node.js.
+          </p>
+        </div>
+
+        <!-- grid -->
+        <div class="skills__grid_container">
+          <!-- grid item 1 -->
+          <div class="skills__grid_item"></div>
+
+          <!-- grid item 2 -->
+          <div class="skills__grid_item">
+            <div class="skills__grid_item_header">
+              <div>
+                <img src="./assets/check-icon.svg" alt="check-icon" />
+                <h2 data-i18n="toolsTitle">Công cụ & Công nghệ</h2>
+              </div>
+              <p data-i18n="toolsDescription">
+                Thành thạo nhiều công cụ lập trình web hiện đại, có kinh nghiệm
+                xây dựng các ứng dụng web tương tác, thân thiện với người dùng
+                và đam mê viết mã sạch, dễ bảo trì.
+              </p>
+            </div>
+
+            <!-- skill logos -->
+            <div>
+              <!-- list 1 -->
+              <div class="icons-list-wrapper">
+                <div class="icons-list">
+                  <div class="icon-badges">
+                    <img src="./assets/icons/c-sharp.svg" alt="C# icon" />
+                    <span>C#</span>
+                  </div>
+                  <div class="icon-badges">
+                    <img src="./assets/icons/github.svg" alt="github icon" />
+                    <span>github</span>
+                  </div>
+                  <div class="icon-badges">
+                    <img src="./assets/icons/css.svg" alt="CSS icon" />
+                    <span>CSS</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img src="./assets/icons/java.svg" alt="java icon" />
+                    <span>java</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img src="./assets/icons/html.svg" alt="html icon" />
+                    <span>html</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img src="./assets/icons/node-js.svg" alt="nodejs icon" />
+                    <span>node js</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img src="./assets/icons/JS.svg" alt="js icon" />
+                    <span>js</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img src="./assets/icons/react.svg" alt="react icon" />
+                    <span>react</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img
+                      src="./assets/icons/postgresql.svg"
+                      alt="postgresql icon"
+                    />
+                    <span>postgresql</span>
+                  </div>
+                  <div class="icon-badges">
+                    <img src="./assets/icons/nextjs.svg" alt="nextjs icon" />
+                    <span>nextjs</span>
+                  </div>
+                </div>
+
+                <div class="icons-list">
+                  <div class="icon-badges">
+                    <img src="./assets/icons/c-sharp.svg" alt="C# icon" />
+                    <span>C#</span>
+                  </div>
+                  <div class="icon-badges">
+                    <img src="./assets/icons/github.svg" alt="github icon" />
+                    <span>github</span>
+                  </div>
+                  <div class="icon-badges">
+                    <img src="./assets/icons/css.svg" alt="CSS icon" />
+                    <span>CSS</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img src="./assets/icons/java.svg" alt="java icon" />
+                    <span>java</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img src="./assets/icons/html.svg" alt="html icon" />
+                    <span>html</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img src="./assets/icons/node-js.svg" alt="nodejs icon" />
+                    <span>node js</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img src="./assets/icons/JS.svg" alt="js icon" />
+                    <span>js</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img src="./assets/icons/react.svg" alt="react icon" />
+                    <span>react</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img
+                      src="./assets/icons/postgresql.svg"
+                      alt="postgresql icon"
+                    />
+                    <span>postgresql</span>
+                  </div>
+                  <div class="icon-badges">
+                    <img src="./assets/icons/nextjs.svg" alt="nextjs icon" />
+                    <span>nextjs</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- list 2 -->
+              <div class="icons-list-wrapper">
+                <div class="icons-list">
+                  <div class="icon-badges">
+                    <img src="./assets/icons/c-sharp.svg" alt="C# icon" />
+                    <span>C#</span>
+                  </div>
+                  <div class="icon-badges">
+                    <img src="./assets/icons/github.svg" alt="github icon" />
+                    <span>github</span>
+                  </div>
+                  <div class="icon-badges">
+                    <img src="./assets/icons/css.svg" alt="CSS icon" />
+                    <span>CSS</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img src="./assets/icons/java.svg" alt="java icon" />
+                    <span>java</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img src="./assets/icons/html.svg" alt="html icon" />
+                    <span>html</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img src="./assets/icons/node-js.svg" alt="nodejs icon" />
+                    <span>node js</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img src="./assets/icons/JS.svg" alt="js icon" />
+                    <span>js</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img src="./assets/icons/react.svg" alt="react icon" />
+                    <span>react</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img
+                      src="./assets/icons/postgresql.svg"
+                      alt="postgresql icon"
+                    />
+                    <span>postgresql</span>
+                  </div>
+                  <div class="icon-badges">
+                    <img src="./assets/icons/nextjs.svg" alt="nextjs icon" />
+                    <span>nextjs</span>
+                  </div>
+                </div>
+
+                <div class="icons-list">
+                  <div class="icon-badges">
+                    <img src="./assets/icons/c-sharp.svg" alt="C# icon" />
+                    <span>C#</span>
+                  </div>
+                  <div class="icon-badges">
+                    <img src="./assets/icons/github.svg" alt="github icon" />
+                    <span>github</span>
+                  </div>
+                  <div class="icon-badges">
+                    <img src="./assets/icons/css.svg" alt="CSS icon" />
+                    <span>CSS</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img src="./assets/icons/java.svg" alt="java icon" />
+                    <span>java</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img src="./assets/icons/html.svg" alt="html icon" />
+                    <span>html</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img src="./assets/icons/node-js.svg" alt="nodejs icon" />
+                    <span>node js</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img src="./assets/icons/JS.svg" alt="js icon" />
+                    <span>js</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img src="./assets/icons/react.svg" alt="react icon" />
+                    <span>react</span>
+                  </div>
+
+                  <div class="icon-badges">
+                    <img
+                      src="./assets/icons/postgresql.svg"
+                      alt="postgresql icon"
+                    />
+                    <span>postgresql</span>
+                  </div>
+                  <div class="icon-badges">
+                    <img src="./assets/icons/nextjs.svg" alt="nextjs icon" />
+                    <span>nextjs</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- grid item 3 -->
+          <div class="skills__grid_item">
+            <div class="skills__grid_item_header">
+              <div>
+                <img src="./assets/check-icon.svg" alt="check icon" />
+                <h2 data-i18n="softSkillsTitle">Kỹ Năng Mềm</h2>
+              </div>
+              <p data-i18n="softSkillsDescription">
+                Kỹ năng giao tiếp, cộng tác, và giải quyết vấn đề xuất sắc, với
+                thái độ chủ động và ham học hỏi, dễ dàng thích nghi trong môi
+                trường làm việc nhóm năng động.
+              </p>
+            </div>
+
+            <div class="softSkills__container">
+              <div class="softSkills_badge">
+                <p data-i18n="softSkill1">Giao tiếp chuyên nghiệp</p>
+              </div>
+
+              <div class="softSkills_badge">
+                <p data-i18n="softSkill2">Quản lý thời gian hiệu quả</p>
+              </div>
+              <div class="softSkills_badge">
+                <p data-i18n="softSkill3">Đáng tin cậy</p>
+              </div>
+              <div class="softSkills_badge">
+                <p data-i18n="softSkill4">Ham học hỏi</p>
+              </div>
+
+              <div class="softSkills__book_icons">
+                <img src="./assets/closed-book.svg" alt="closed book icon" />
+                <img src="./assets/closed-book.svg" alt="closed book icon" />
+                <img src="./assets/closed-book.svg" alt="closed book icon" />
+                <img src="./assets/closed-book.svg" alt="closed book icon" />
+              </div>
+            </div>
+          </div>
+
+          <!-- grid item 4 -->
+          <div class="skills__grid_item"></div>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------------------- 
+      Projects - Dự Án
+    ----------------------------------->
+    <section class="projects__section" id="ProjectContainer">
+      <div class="container projects_container">
+        <!-- header -->
+        <div class="section__header">
+          <h1 class="section__title" data-i18n="projectsTitle">
+            Đồ Án Thực Chiến
+          </h1>
+          <p class="section__description" data-i18n="projectsDescription">
+            Bộ sưu tập dự án thực tập tại trường này giúp mình củng cố và hoàn
+            thiện những kỹ năng kỹ thuật cũng như khả năng giải quyết vấn đề một
+            cách sáng tạo.
+          </p>
+        </div>
+
+        <!-- cards -->
+        <div class="projects__cards_container">
+          <a
+            href="https://may-nghe-nhac.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="projects_cards">
+              <div class="projects__cards_wrapper">
+                <img
+                  src="./assets/project1.jpg"
+                  alt="project1"
+                  class="projects__cards_img"
+                />
+              </div>
+              <div class="projects__cards_titles">
+                <h4 data-i18n="projectLabel1">dự án 1</h4>
+                <h3 data-i18n="projectName1">Music Player</h3>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://shop-pe-sooty.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="projects_cards">
+              <div class="projects__cards_wrapper">
+                <img
+                  src="./assets/project2.jpg"
+                  alt="project1"
+                  class="projects__cards_img"
+                />
+              </div>
+              <div class="projects__cards_titles">
+                <h4 data-i18n="projectLabel2">dự án 2</h4>
+                <h3 data-i18n="projectName2">My Shope</h3>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://onepape.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="projects_cards">
+              <div class="projects__cards_wrapper">
+                <img
+                  src="./assets/project3.jpg"
+                  alt="project1"
+                  class="projects__cards_img"
+                />
+              </div>
+              <div class="projects__cards_titles">
+                <h4 data-i18n="projectLabel3">dự án 3</h4>
+                <h3 data-i18n="projectName3">The Band</h3>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://quanlylophoc-f7a9c.firebaseapp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="projects_cards">
+              <div class="projects__cards_wrapper">
+                <img
+                  src="./assets/project4.jpg"
+                  alt="project1"
+                  class="projects__cards_img"
+                />
+              </div>
+              <div class="projects__cards_titles">
+                <h4 data-i18n="projectLabel4">dự án 4</h4>
+                <h3 data-i18n="projectName4">Quan Ly Lop Hoc</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------------------- 
+      Footer
+    ----------------------------------->
+    <footer>
+      <div class="container">
+        <p data-i18n="footerText">© DUCPHU's Portfolio</p>
+      </div>
+    </footer>
+    <script>
+      const translations = {
+        vi: {
+          documentTitle: "DucPhu Portfolio",
+          headerBadgePrimary: "Lập trình web, mobile app",
+          headerBadgeSecondary: "Fullstack developer",
+          headerIntroPrefix: "Mong muốn ứng tuyển vị trí",
+          headerIntroSuffix: "trong lĩnh vực phát triển web và mobile apps.",
+          contactTitle: "Thông Tin Liên Hệ",
+          emailLabel: "Gửi email cho mình tại:",
+          phoneLabel: "Gọi cho mình tại:",
+          aboutTitle: "Giới Thiệu Bản Thân",
+          aboutDescription:
+            "Xin chào! Mình là sinh viên năm cuối trường đại học Ngoại Ngữ Và Tin Học. Mình có niềm đam mê với công việc lập trình và vô cùng yêu thích việc tạo ra các trang web và mobile app hiện đại và có tính ứng dụng cao.",
+          downloadCv: "Tải CV",
+          viewProjects: "Xem Dự Án",
+          skillsTitle: "Kỹ năng & Chuyên môn",
+          skillsDescription:
+            "Fullstack developer với 1+ năm làm dự án cá nhân. Vững HTML, CSS, JavaScript, React và UX/UI responsive. Có kiến thức REST API và backend với PHP, DB, Node.js.",
+          toolsTitle: "Công cụ & Công nghệ",
+          toolsDescription:
+            "Thành thạo nhiều công cụ lập trình web hiện đại, có kinh nghiệm xây dựng các ứng dụng web tương tác, thân thiện với người dùng và đam mê viết mã sạch, dễ bảo trì.",
+          softSkillsTitle: "Kỹ Năng Mềm",
+          softSkillsDescription:
+            "Kỹ năng giao tiếp, cộng tác, và giải quyết vấn đề xuất sắc, với thái độ chủ động và ham học hỏi, dễ dàng thích nghi trong môi trường làm việc nhóm năng động.",
+          softSkill1: "Giao tiếp chuyên nghiệp",
+          softSkill2: "Quản lý thời gian hiệu quả",
+          softSkill3: "Đáng tin cậy",
+          softSkill4: "Ham học hỏi",
+          projectsTitle: "Đồ Án Thực Chiến",
+          projectsDescription:
+            "Bộ sưu tập dự án thực tập tại trường này giúp mình củng cố và hoàn thiện những kỹ năng kỹ thuật cũng như khả năng giải quyết vấn đề một cách sáng tạo.",
+          projectLabel1: "dự án 1",
+          projectLabel2: "dự án 2",
+          projectLabel3: "dự án 3",
+          projectLabel4: "dự án 4",
+          projectLabel5: "dự án 5",
+          projectLabel6: "dự án 6",
+          projectName1: "Music Player",
+          projectName2: "My Shope",
+          projectName3: "The Band",
+          projectName4: "Quan Ly Lop Hoc",
+          projectName5: "thiết kế trang doanh nghiệp",
+          projectName6: "Thiết kế web",
+          footerText: "© DUCPHU's Portfolio",
+        },
+        en: {
+          documentTitle: "DucPhu Portfolio | English",
+          headerBadgePrimary: "Web and mobile app development",
+          headerBadgeSecondary: "Fullstack developer",
+          headerIntroPrefix: "Seeking a",
+          headerIntroSuffix: "position in web and mobile app development.",
+          contactTitle: "Contact Information",
+          emailLabel: "Email me at:",
+          phoneLabel: "Call me at:",
+          aboutTitle: "About Me",
+          aboutDescription:
+            "Hello! I am a final-year student at the University of Foreign Languages and Informatics. I am passionate about programming and truly enjoy building modern, practical websites and mobile apps.",
+          downloadCv: "Download CV",
+          viewProjects: "View Projects",
+          skillsTitle: "Skills & Expertise",
+          skillsDescription:
+            "A fullstack developer with 1+ year of personal project experience. Strong in HTML, CSS, JavaScript, React, and responsive UX/UI. Familiar with REST APIs and backend development using PHP, databases, and Node.js.",
+          toolsTitle: "Tools & Technologies",
+          toolsDescription:
+            "Proficient with a range of modern web development tools, experienced in building interactive, user-friendly web applications, and committed to writing clean, maintainable code.",
+          softSkillsTitle: "Soft Skills",
+          softSkillsDescription:
+            "Strong communication, collaboration, and problem-solving skills, with a proactive mindset, a willingness to learn, and the ability to adapt well in dynamic team environments.",
+          softSkill1: "Professional communication",
+          softSkill2: "Effective time management",
+          softSkill3: "Reliable",
+          softSkill4: "Eager to learn",
+          projectsTitle: "Featured Projects",
+          projectsDescription:
+            "This collection of academic internship projects helped me strengthen my technical skills and improve my ability to solve problems creatively.",
+          projectLabel1: "project 1",
+          projectLabel2: "project 2",
+          projectLabel3: "project 3",
+          projectLabel4: "project 4",
+          projectLabel5: "project 5",
+          projectLabel6: "project 6",
+          projectName1: "Music Player",
+          projectName2: "My Shope",
+          projectName3: "The Band",
+          projectName4: "Quan Ly Lop Hoc",
+          projectName5: "business website design",
+          projectName6: "web design",
+          footerText: "© DUCPHU's Portfolio",
+        },
+      };
+
+      const languageStorageKey = "portfolioLanguage";
+      const translatableNodes = document.querySelectorAll("[data-i18n]");
+      const languageButtons = document.querySelectorAll("[data-lang-switch]");
+
+      function setLanguage(lang) {
+        const selectedLanguage = Object.prototype.hasOwnProperty.call(
+          translations,
+          lang
+        )
+          ? lang
+          : "vi";
+        const dictionary = translations[selectedLanguage];
+
+        translatableNodes.forEach((node) => {
+          const key = node.dataset.i18n;
+
+          if (Object.prototype.hasOwnProperty.call(dictionary, key)) {
+            node.textContent = dictionary[key];
+          }
+        });
+
+        document.title = dictionary.documentTitle;
+        document.documentElement.lang = selectedLanguage;
+
+        languageButtons.forEach((button) => {
+          const isActive = button.dataset.langSwitch === selectedLanguage;
+
+          button.classList.toggle("is-active", isActive);
+          button.setAttribute("aria-pressed", String(isActive));
+        });
+
+        try {
+          localStorage.setItem(languageStorageKey, selectedLanguage);
+        } catch (error) {}
+      }
+
+      let savedLanguage = "vi";
+
+      try {
+        savedLanguage = localStorage.getItem(languageStorageKey) || "vi";
+      } catch (error) {}
+
+      languageButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          setLanguage(button.dataset.langSwitch);
+        });
+      });
+
+      setLanguage(savedLanguage);
+    </script>
+  </body>
+</html>
