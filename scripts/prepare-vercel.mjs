@@ -4,7 +4,7 @@ const requiredFiles = [
   "public/index.html",
   "public/css/theme.css",
   "public/assets/avatar.jpg",
-  "public/assets/CV_Luong_Duc_Phu_Developer.pdf",
+  "public/assets/CV_Luong_Duc_Phu_Full_stack_Developer.pdf",
 ];
 
 await Promise.all(requiredFiles.map((file) => access(file)));

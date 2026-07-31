@@ -14,7 +14,7 @@
 
 .skill-groups {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   border-top: 1px solid #344054;
   border-bottom: 1px solid #344054;
 }
@@ -24,9 +24,13 @@
   padding: 30px clamp(24px, 4vw, 48px) 36px 0;
 }
 
-.skill-group + .skill-group {
+.skill-group:nth-child(even) {
   padding-left: clamp(24px, 4vw, 52px);
   border-left: 1px solid #344054;
+}
+
+.skill-group:nth-child(n + 3) {
+  border-top: 1px solid #344054;
 }
 
 .skill-number {
