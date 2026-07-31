@@ -3,3 +3,8 @@ Thumbs.db
 node_modules/
 .vscode/
 agent/
+.next/
+dist/
+.codex-tmp/
+test-results/
+next-env.d.ts
