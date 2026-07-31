@@ -1,204 +1,105 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+:root {
+  --ink: #101828;
+  --ink-soft: #344054;
+  --muted: #667085;
+  --paper: #f5f3ed;
+  --surface: #fffdf8;
+  --line: #d6d8d2;
+  --accent: #3155e7;
+  --accent-dark: #2443bd;
+  --accent-soft: #dfe6ff;
+  --white: #ffffff;
+  --max-width: 1240px;
+  --header-height: 78px;
+  --radius-sm: 14px;
+  --radius-md: 24px;
+  --radius-lg: 36px;
+  --font-sans: "Times New Roman", Times, serif;
+  --font-display: "Times New Roman", Times, serif;
+}
 
-html,
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-height) + 24px);
+}
+
 body,
-div,
-span,
-applet,
-object,
-iframe,
 h1,
 h2,
 h3,
-h4,
-h5,
-h6,
 p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
 dl,
-dt,
 dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+figure {
+  margin: 0;
+}
+
+body {
+  min-width: 320px;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.55;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  font: inherit;
+}
+
+ul {
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+::selection {
+  background: var(--accent);
+  color: var(--white);
 }
 
-ol,
-ul {
-  list-style: none;
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
 }
 
-blockquote,
-q {
-  quotes: none;
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 1000;
+  padding: 10px 16px;
+  transform: translateY(-160%);
+  border-radius: 8px;
+  background: var(--ink);
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 700;
+  transition: transform 180ms ease;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/******************
-     THEME 
-*******************/
-:root {
-  /*=============== 
-        COLORS 
-    =================*/
-  /* Primary colors */
-  --p-20: hsl(213, 100%, 98%);
-  --p-50: hsl(215, 100%, 97%);
-  --p-100: hsl(215, 100%, 94%);
-  --p-200: hsl(216, 93%, 89%);
-  --p-300: hsl(219, 91%, 82%);
-  --p-400: hsl(224, 86%, 74%);
-  --p-450: hsl(198, 81%, 63%);
-  --p-500: hsl(228, 81%, 63%);
-  --p-500-code: 228, 81%, 63%;
-  --p-600: hsl(233, 73%, 59%);
-  --p-600-code: 233, 73%, 59%;
-  --p-700: hsl(234, 56%, 51%);
-  --p-700-code: 234, 56%, 51%;
-  --p-800: hsl(233, 53%, 41%);
-  --p-900: hsl(231, 46%, 34%);
-  --p-900-code: 231, 46%, 34%;
-  --p-950: hsl(233, 45%, 20%);
-  --p-950-code: 233, 45%, 20%;
-
-  /* Neutrals */
-  --n-50: hsl(210, 14%, 97%);
-  --n-500: hsl(215, 16%, 47%);
-  --n-600: hsl(215, 16%, 35%);
-  --foreground-color: hsl(0, 0%, 100%);
-
-  /* Gradients */
-  --main-gradient-color: linear-gradient(to right, var(--p-450), var(--p-500));
-  --gradient-color: linear-gradient(var(--foreground-color) 10%, var(--p-100));
-
-  /*================================= 
-        FONTS -  Sử dụng Scale 1.125
-    =================================*/
-  /* 32px */
-  --h1-font-size: 2rem;
-  /* 36px */
-  --h1-line-height: 2.25rem;
-
-  /* 26px */
-  --h2-font-size: 1.6rem;
-  /* 32px */
-  --h2-line-height: 2rem;
-
-  /* 20px */
-  --h3-font-size: 1.266rem;
-  /* 24px */
-  --h3-line-height: 1.5rem;
-
-  /* 18px */
-  --h4-font-size: 1.125rem;
-  /* 16px */
-  --h4-line-height: 1.5rem;
-
-  /* 16px */
-  --p-font-size: 1rem;
-  /* 24px */
-  --p-line-height: 1.5rem;
-
-  --p-letter-spacing: 0.025rem;
-
-  /* 12px */
-  --caption-font-size: 0.875rem;
-  /* 16px */
-  --caption-line-height: 1rem;
+.skip-link:focus {
+  transform: translateY(0);
 }

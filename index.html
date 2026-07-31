@@ -3,60 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DucPhu Portfolio</title>
-
-    <link rel="stylesheet" href="css/main.css" />
-
-    <link rel="stylesheet" href="css/responsive.css" />
+    <meta
+      name="description"
+      content="Portfolio của Lương Đức Phú — Front-end Developer tại TP. Hồ Chí Minh, tập trung vào giao diện responsive, JavaScript, React và Firebase."
+    />
+    <meta name="theme-color" content="#f5f3ed" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Lương Đức Phú | Front-end Developer" />
+    <meta
+      property="og:description"
+      content="Front-end Developer với hơn một năm thực hành qua dự án, có kinh nghiệm xây dựng giao diện responsive và tích hợp REST API."
+    />
+    <title>Lương Đức Phú | Front-end Developer</title>
 
     <link rel="icon" href="./assets/rocket-icon.ico" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
   </head>
+
   <body>
-    <!--------------- 
-      Header
-    ----------------->
-    <header>
-      <div class="container header__container">
-        <!-- left column -->
-        <div class="header__column--left">
-          <!-- avatar -->
-          <div class="header__img"></div>
+    <a class="skip-link" href="#main-content" data-i18n="skipLink">
+      Bỏ qua điều hướng
+    </a>
 
-          <div class="header__content--left">
-            <h2 class="header__title">Lương Đức Phú</h2>
-            <div class="header__badge_container">
-              <div class="badge" data-i18n="headerBadgePrimary">
-                Lập trình web, mobile app
-              </div>
-              <div class="badge" data-i18n="headerBadgeSecondary">
-                Fullstack developer
-              </div>
-            </div>
-            <p>
-              <span data-i18n="headerIntroPrefix">
-                Mong muốn ứng tuyển vị trí
-              </span>
-              <span class="header__highlight">fresher Developer</span>
-              <span data-i18n="headerIntroSuffix">
-                trong lĩnh vực phát triển web và mobile apps.
-              </span>
-            </p>
-          </div>
-        </div>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="#top" aria-label="Lương Đức Phú — Trang chủ">
+          <span class="brand-mark">LĐP</span>
+          <span class="brand-label">Portfolio</span>
+        </a>
 
-        <!-- right column -->
-        <div class="header__column--right">
+        <nav class="main-nav" aria-label="Điều hướng chính">
+          <a href="#journey" data-i18n="navJourney">Kinh nghiệm</a>
+          <a href="#skills" data-i18n="navSkills">Kỹ năng</a>
+          <a href="#projects" data-i18n="navProjects">Dự án</a>
+        </nav>
+
+        <div class="header-actions">
           <div
             class="language-switcher"
             role="group"
-            aria-label="Language switcher"
+            aria-label="Chọn ngôn ngữ"
           >
             <button
               type="button"
@@ -70,575 +60,537 @@
               EN
             </button>
           </div>
-          <h2 class="header__title" data-i18n="contactTitle">
-            Thông Tin Liên Hệ
-          </h2>
-          <p>
-            <span data-i18n="emailLabel">Gửi email cho mình tại:</span>
-            <span class="header__highlight">luongducphucv@gmail.com</span>
-          </p>
-          <p>
-            <span data-i18n="phoneLabel">Gọi cho mình tại:</span>
-            <span class="header__highlight">0917829075</span>
-          </p>
+
+          <a
+            class="header-contact"
+            href="mailto:luongducphucv@gmail.com"
+            data-i18n="navContact"
+          >
+            Liên hệ
+          </a>
         </div>
       </div>
     </header>
 
-    <!--------------------------------- 
-      About Me - Giới Thiệu Bản Thân
-    ----------------------------------->
-    <section class="aboutMe__section">
-      <!-- Hình động 2 bên -->
-      <img src="./assets/rocket-icon.svg" alt="rocket icon" />
+    <main id="main-content">
+      <section class="hero" id="top">
+        <div class="hero-orbit" aria-hidden="true"></div>
 
-      <img src="./assets/laptop-icon.svg" alt="laptop icon" />
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow hero-enter hero-enter--1">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span data-i18n="heroEyebrow"
+                >Sẵn sàng cho cơ hội Front-end Fresher</span
+              >
+            </p>
 
-      <!-- Nội dung chính -->
-      <div class="aboutMe__container">
-        <div class="aboutMe__content_container">
-          <h1 class="section__title" data-i18n="aboutTitle">
-            Giới Thiệu Bản Thân
-          </h1>
+            <h1 class="hero-title hero-enter hero-enter--2">
+              <span class="hero-name">Lương Đức Phú</span>
+              <span class="hero-role" data-i18n="heroRole"
+                >Front-end Developer</span
+              >
+            </h1>
 
-          <p class="section__description" data-i18n="aboutDescription">
-            Xin chào! Mình là sinh viên năm cuối trường đại học Ngoại Ngữ Và Tin
-            Học. Mình có niềm đam mê với công việc lập trình và vô cùng yêu
-            thích việc tạo ra các trang web và mobile app hiện đại và có tính
-            ứng dụng cao.
+            <p
+              class="hero-description hero-enter hero-enter--3"
+              data-i18n="heroDescription"
+            >
+              Mình xây dựng giao diện web responsive, dễ sử dụng và có hiệu năng
+              tốt bằng HTML, CSS, JavaScript và React.
+            </p>
+
+            <div class="hero-actions hero-enter hero-enter--4">
+              <a class="button button--primary" href="#projects">
+                <span data-i18n="viewProjects">Xem dự án</span>
+                <span aria-hidden="true">↘</span>
+              </a>
+              <a
+                class="button button--text"
+                href="./assets/CV_Luong_Duc_Phu_Front_Fullstack_Developer.pdf"
+                download="Luong-Duc-Phu-Frontend-Developer-CV.pdf"
+              >
+                <span data-i18n="downloadCv">Tải CV</span>
+                <span aria-hidden="true">↓</span>
+              </a>
+            </div>
+
+            <dl class="hero-facts hero-enter hero-enter--4">
+              <div>
+                <dt>1+</dt>
+                <dd data-i18n="factExperience">năm thực hành dự án</dd>
+              </div>
+              <div>
+                <dt>03</dt>
+                <dd data-i18n="factProjects">demo đang hoạt động</dd>
+              </div>
+              <div>
+                <dt>HCM</dt>
+                <dd data-i18n="factLocation">Việt Nam</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="hero-visual hero-enter hero-enter--3">
+            <div class="portrait-frame">
+              <img
+                src="./assets/icons/avatar.jpg"
+                alt="Chân dung Lương Đức Phú"
+                width="960"
+                height="960"
+              />
+            </div>
+            <div class="portrait-note">
+              <span class="portrait-index">01</span>
+              <p data-i18n="portraitNote">
+                Tập trung vào trải nghiệm web rõ ràng, responsive và thực tế.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="journey section" id="journey">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-index">01 / 04</p>
+            <div>
+              <p class="eyebrow" data-i18n="journeyEyebrow">
+                Kinh nghiệm &amp; học vấn
+              </p>
+              <h2 data-i18n="journeyTitle">Nền tảng để làm ra sản phẩm tốt.</h2>
+              <p class="section-lead" data-i18n="journeyDescription">
+                Kết hợp kinh nghiệm tại doanh nghiệp với nền tảng lập trình
+                website và mobile tại HUFLIT.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline reveal">
+            <article class="timeline-row">
+              <div class="timeline-meta">
+                <p data-i18n="experienceLabel">Kinh nghiệm</p>
+                <time datetime="2024-04">04/2024</time>
+                <span aria-hidden="true">—</span>
+                <time datetime="2024-09">09/2024</time>
+              </div>
+              <div class="timeline-content">
+                <p class="timeline-kicker" data-i18n="experienceCompany">
+                  Quoc Bao Software Company Limited
+                </p>
+                <h3 data-i18n="experienceRole">Front-end Developer</h3>
+                <ul class="responsibility-list">
+                  <li data-i18n="experiencePoint1">
+                    Tham gia xây dựng giao diện web responsive trên nhiều kích
+                    thước màn hình.
+                  </li>
+                  <li data-i18n="experiencePoint2">
+                    Hỗ trợ tối ưu hiệu năng website và triển khai SEO cơ bản.
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline-row">
+              <div class="timeline-meta">
+                <p data-i18n="educationLabel">Học vấn</p>
+                <time datetime="2021-09">09/2021</time>
+                <span aria-hidden="true">—</span>
+                <span data-i18n="present">Hiện tại</span>
+              </div>
+              <div class="timeline-content">
+                <p class="timeline-kicker" data-i18n="educationSchool">
+                  Đại học Ngoại ngữ – Tin học TP.HCM (HUFLIT)
+                </p>
+                <h3 data-i18n="educationProgram">
+                  Lập trình Website &amp; Mobile
+                </h3>
+                <p class="education-result" data-i18n="educationResult">
+                  Kết quả học tập: Khá (Good)
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills section" id="skills">
+        <div class="container">
+          <div class="section-heading section-heading--light reveal">
+            <p class="section-index">02 / 04</p>
+            <div>
+              <p class="eyebrow" data-i18n="skillsEyebrow">Năng lực cốt lõi</p>
+              <h2 data-i18n="skillsTitle">
+                Đúng công cụ cho một giao diện chắc chắn.
+              </h2>
+              <p class="section-lead" data-i18n="skillsDescription">
+                Trọng tâm là front-end; backend và công cụ triển khai hỗ trợ
+                mình hoàn thiện luồng sản phẩm từ giao diện đến dữ liệu.
+              </p>
+            </div>
+          </div>
+
+          <div class="skill-groups reveal">
+            <article class="skill-group">
+              <p class="skill-number">01</p>
+              <h3 data-i18n="frontendTitle">Front-end chính</h3>
+              <p data-i18n="frontendSkills">
+                HTML5 · CSS3 · JavaScript · React · Tailwind CSS · Responsive UI
+              </p>
+            </article>
+
+            <article class="skill-group">
+              <p class="skill-number">02</p>
+              <h3 data-i18n="backendTitle">Backend nền tảng</h3>
+              <p data-i18n="backendSkills">
+                PHP · Node.js · REST API · Firebase · MySQL
+              </p>
+            </article>
+
+            <article class="skill-group">
+              <p class="skill-number">03</p>
+              <h3 data-i18n="workflowTitle">Công cụ &amp; quy trình</h3>
+              <p data-i18n="workflowSkills">
+                Git · GitHub · Vercel · Postman · UI/UX · SEO cơ bản
+              </p>
+            </article>
+          </div>
+
+          <p class="skills-note reveal" data-i18n="skillsNote">
+            Mình coi khả năng học nhanh, phối hợp nhóm và giải quyết vấn đề là
+            một phần của năng lực kỹ thuật.
           </p>
+        </div>
+      </section>
 
-          <div class="CTA">
-            <a
-              href="./assets/CV_Luong_Duc_Phu_Front_Fullstack_Developer.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="primaryButton"
-              download
-              data-i18n="downloadCv"
-              >Tải CV</a
-            >
+      <section class="projects section" id="projects">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-index">03 / 04</p>
+            <div>
+              <p class="eyebrow" data-i18n="projectsEyebrow">Dự án nổi bật</p>
+              <h2 data-i18n="projectsTitle">Sản phẩm thật, demo đang chạy.</h2>
+              <p class="section-lead" data-i18n="projectsDescription">
+                Ba dự án đang hoạt động thể hiện quá trình tiến bộ từ landing
+                page responsive đến PWA và ứng dụng dữ liệu thời gian thực.
+              </p>
+            </div>
+          </div>
 
-            <a
-              href="#ProjectContainer"
-              class="outlineButton"
-              data-i18n="viewProjects"
-            >
-              Xem Dự Án
+          <div class="project-list">
+            <article class="project project--featured reveal">
+              <a
+                class="project-media"
+                href="https://may-nghe-nhac.vercel.app/nghe_nhac/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Mở demo Music Player"
+              >
+                <img
+                  src="./assets/project-music.png"
+                  alt="Giao diện dự án Music Player"
+                  loading="lazy"
+                  width="1440"
+                  height="900"
+                />
+              </a>
+              <div class="project-info">
+                <div class="project-meta">
+                  <span>01</span>
+                  <span>HTML · CSS · JavaScript · PWA</span>
+                </div>
+                <h3>Music Player</h3>
+                <p data-i18n="musicDescription">
+                  Trình phát nhạc có thể cài đặt, hỗ trợ nghe ngoại tuyến, danh
+                  sách phát và phím tắt để điều khiển nhanh.
+                </p>
+                <a
+                  class="project-link"
+                  href="https://may-nghe-nhac.vercel.app/nghe_nhac/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span data-i18n="openProject">Xem dự án</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+
+            <div class="project-pair">
+              <article class="project reveal">
+                <a
+                  class="project-media"
+                  href="https://quanlylophoc-f7a9c.firebaseapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Mở demo ClassFlow"
+                >
+                  <img
+                    src="./assets/project-classflow.png"
+                    alt="Giao diện dự án ClassFlow"
+                    loading="lazy"
+                    width="1440"
+                    height="900"
+                  />
+                </a>
+                <div class="project-info">
+                  <div class="project-meta">
+                    <span>02</span>
+                    <span>JavaScript · Firebase · Firestore</span>
+                  </div>
+                  <h3>ClassFlow</h3>
+                  <p data-i18n="classflowDescription">
+                    Ứng dụng quản lý lớp học với đăng nhập OTP, giao bài, quản
+                    lý học viên và trò chuyện theo thời gian thực.
+                  </p>
+                  <a
+                    class="project-link"
+                    href="https://quanlylophoc-f7a9c.firebaseapp.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span data-i18n="openProject">Xem dự án</span>
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </article>
+
+              <article class="project reveal">
+                <a
+                  class="project-media"
+                  href="https://onepape.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Mở demo The Band"
+                >
+                  <img
+                    src="./assets/project-band.png"
+                    alt="Giao diện dự án The Band"
+                    loading="lazy"
+                    width="1440"
+                    height="900"
+                  />
+                </a>
+                <div class="project-info">
+                  <div class="project-meta">
+                    <span>03</span>
+                    <span>HTML · CSS · JavaScript</span>
+                  </div>
+                  <h3>The Band</h3>
+                  <p data-i18n="bandDescription">
+                    Landing page âm nhạc responsive với điều hướng theo section,
+                    lịch diễn, biểu mẫu liên hệ và menu dành cho mobile.
+                  </p>
+                  <a
+                    class="project-link"
+                    href="https://onepape.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span data-i18n="openProject">Xem dự án</span>
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div class="container contact-grid reveal">
+          <div>
+            <p class="section-index">04 / 04</p>
+            <p class="eyebrow" data-i18n="contactEyebrow">Cùng làm việc</p>
+          </div>
+
+          <div class="contact-copy">
+            <h2 data-i18n="contactTitle">
+              Bạn đang tìm một Front-end Fresher chủ động?
+            </h2>
+            <p data-i18n="contactDescription">
+              Mình sẵn sàng trao đổi về cơ hội thực tập hoặc vị trí Front-end
+              Developer tại TP. Hồ Chí Minh.
+            </p>
+            <a class="contact-email" href="mailto:luongducphucv@gmail.com">
+              luongducphucv@gmail.com
+              <span aria-hidden="true">↗</span>
             </a>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!--------------------------------- 
-      Skills - Kỹ Năng
-    ----------------------------------->
-    <section class="skills__section">
-      <div class="container skills__container">
-        <!-- header -->
-        <div class="section__header">
-          <h1 class="section__title" data-i18n="skillsTitle">
-            Kỹ năng & Chuyên môn
-          </h1>
-
-          <p class="section__description" data-i18n="skillsDescription">
-            Fullstack developer với 1+ năm làm dự án cá nhân. Vững HTML, CSS,
-            JavaScript, React và UX/UI responsive. Có kiến thức REST API và
-            backend với PHP, DB, Node.js.
-          </p>
-        </div>
-
-        <!-- grid -->
-        <div class="skills__grid_container">
-          <!-- grid item 1 -->
-          <div class="skills__grid_item"></div>
-
-          <!-- grid item 2 -->
-          <div class="skills__grid_item">
-            <div class="skills__grid_item_header">
-              <div>
-                <img src="./assets/check-icon.svg" alt="check-icon" />
-                <h2 data-i18n="toolsTitle">Công cụ & Công nghệ</h2>
-              </div>
-              <p data-i18n="toolsDescription">
-                Thành thạo nhiều công cụ lập trình web hiện đại, có kinh nghiệm
-                xây dựng các ứng dụng web tương tác, thân thiện với người dùng
-                và đam mê viết mã sạch, dễ bảo trì.
-              </p>
-            </div>
-
-            <!-- skill logos -->
-            <div>
-              <!-- list 1 -->
-              <div class="icons-list-wrapper">
-                <div class="icons-list">
-                  <div class="icon-badges">
-                    <img src="./assets/icons/c-sharp.svg" alt="C# icon" />
-                    <span>C#</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/github.svg" alt="github icon" />
-                    <span>github</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/css.svg" alt="CSS icon" />
-                    <span>CSS</span>
-                  </div>
-
-                  <div class="icon-badges">
-                    <img src="./assets/icons/java.svg" alt="java icon" />
-                    <span>java</span>
-                  </div>
-
-                  <div class="icon-badges">
-                    <img src="./assets/icons/html.svg" alt="html icon" />
-                    <span>html</span>
-                  </div>
-
-                  <div class="icon-badges">
-                    <img src="./assets/icons/node-js.svg" alt="nodejs icon" />
-                    <span>node js</span>
-                  </div>
-
-                  <div class="icon-badges">
-                    <img src="./assets/icons/JS.svg" alt="js icon" />
-                    <span>js</span>
-                  </div>
-
-                  <div class="icon-badges">
-                    <img src="./assets/icons/react.svg" alt="react icon" />
-                    <span>react</span>
-                  </div>
-
-                  <div class="icon-badges">
-                    <img
-                      src="./assets/icons/postgresql.svg"
-                      alt="postgresql icon"
-                    />
-                    <span>postgresql</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/nextjs.svg" alt="nextjs icon" />
-                    <span>nextjs</span>
-                  </div>
-                </div>
-
-                <div class="icons-list">
-                  <div class="icon-badges">
-                    <img src="./assets/icons/c-sharp.svg" alt="C# icon" />
-                    <span>C#</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/github.svg" alt="github icon" />
-                    <span>github</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/css.svg" alt="CSS icon" />
-                    <span>CSS</span>
-                  </div>
-
-                  <div class="icon-badges">
-                    <img src="./assets/icons/java.svg" alt="java icon" />
-                    <span>java</span>
-                  </div>
-
-                  <div class="icon-badges">
-                    <img src="./assets/icons/html.svg" alt="html icon" />
-                    <span>html</span>
-                  </div>
-
-                  <div class="icon-badges">
-                    <img src="./assets/icons/node-js.svg" alt="nodejs icon" />
-                    <span>node js</span>
-                  </div>
-
-                  <div class="icon-badges">
-                    <img src="./assets/icons/JS.svg" alt="js icon" />
-                    <span>js</span>
-                  </div>
-
-                  <div class="icon-badges">
-                    <img src="./assets/icons/react.svg" alt="react icon" />
-                    <span>react</span>
-                  </div>
-
-                  <div class="icon-badges">
-                    <img
-                      src="./assets/icons/postgresql.svg"
-                      alt="postgresql icon"
-                    />
-                    <span>postgresql</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/nextjs.svg" alt="nextjs icon" />
-                    <span>nextjs</span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- list 2 -->
-              <div class="icons-list-wrapper">
-                <div class="icons-list">
-                  <div class="icon-badges">
-                    <img src="./assets/icons/c-sharp.svg" alt="C# icon" />
-                    <span>C#</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/github.svg" alt="github icon" />
-                    <span>github</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/css.svg" alt="CSS icon" />
-                    <span>CSS</span>
-                  </div>
-
-                  <div class="icon-badges">
-                    <img src="./assets/icons/java.svg" alt="java icon" />
-                    <span>java</span>
-                  </div>
-
-                  <div class="icon-badges">
-                    <img src="./assets/icons/html.svg" alt="html icon" />
-                    <span>html</span>
-                  </div>
-
-                  <div class="icon-badges">
-                    <img src="./assets/icons/node-js.svg" alt="nodejs icon" />
-                    <span>node js</span>
-                  </div>
-
-                  <div class="icon-badges">
-                    <img src="./assets/icons/JS.svg" alt="js icon" />
-                    <span>js</span>
-                  </div>
-
-                  <div class="icon-badges">
-                    <img src="./assets/icons/react.svg" alt="react icon" />
-                    <span>react</span>
-                  </div>
-
-                  <div class="icon-badges">
-                    <img
-                      src="./assets/icons/postgresql.svg"
-                      alt="postgresql icon"
-                    />
-                    <span>postgresql</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/nextjs.svg" alt="nextjs icon" />
-                    <span>nextjs</span>
-                  </div>
-                </div>
-
-                <div class="icons-list">
-                  <div class="icon-badges">
-                    <img src="./assets/icons/c-sharp.svg" alt="C# icon" />
-                    <span>C#</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/github.svg" alt="github icon" />
-                    <span>github</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/css.svg" alt="CSS icon" />
-                    <span>CSS</span>
-                  </div>
-
-                  <div class="icon-badges">
-                    <img src="./assets/icons/java.svg" alt="java icon" />
-                    <span>java</span>
-                  </div>
-
-                  <div class="icon-badges">
-                    <img src="./assets/icons/html.svg" alt="html icon" />
-                    <span>html</span>
-                  </div>
-
-                  <div class="icon-badges">
-                    <img src="./assets/icons/node-js.svg" alt="nodejs icon" />
-                    <span>node js</span>
-                  </div>
-
-                  <div class="icon-badges">
-                    <img src="./assets/icons/JS.svg" alt="js icon" />
-                    <span>js</span>
-                  </div>
-
-                  <div class="icon-badges">
-                    <img src="./assets/icons/react.svg" alt="react icon" />
-                    <span>react</span>
-                  </div>
-
-                  <div class="icon-badges">
-                    <img
-                      src="./assets/icons/postgresql.svg"
-                      alt="postgresql icon"
-                    />
-                    <span>postgresql</span>
-                  </div>
-                  <div class="icon-badges">
-                    <img src="./assets/icons/nextjs.svg" alt="nextjs icon" />
-                    <span>nextjs</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="contact-details">
+            <a href="tel:+84917829075">0917&nbsp;829&nbsp;075</a>
+            <span data-i18n="location">TP. Hồ Chí Minh, Việt Nam</span>
           </div>
-
-          <!-- grid item 3 -->
-          <div class="skills__grid_item">
-            <div class="skills__grid_item_header">
-              <div>
-                <img src="./assets/check-icon.svg" alt="check icon" />
-                <h2 data-i18n="softSkillsTitle">Kỹ Năng Mềm</h2>
-              </div>
-              <p data-i18n="softSkillsDescription">
-                Kỹ năng giao tiếp, cộng tác, và giải quyết vấn đề xuất sắc, với
-                thái độ chủ động và ham học hỏi, dễ dàng thích nghi trong môi
-                trường làm việc nhóm năng động.
-              </p>
-            </div>
-
-            <div class="softSkills__container">
-              <div class="softSkills_badge">
-                <p data-i18n="softSkill1">Giao tiếp chuyên nghiệp</p>
-              </div>
-
-              <div class="softSkills_badge">
-                <p data-i18n="softSkill2">Quản lý thời gian hiệu quả</p>
-              </div>
-              <div class="softSkills_badge">
-                <p data-i18n="softSkill3">Đáng tin cậy</p>
-              </div>
-              <div class="softSkills_badge">
-                <p data-i18n="softSkill4">Ham học hỏi</p>
-              </div>
-
-              <div class="softSkills__book_icons">
-                <img src="./assets/closed-book.svg" alt="closed book icon" />
-                <img src="./assets/closed-book.svg" alt="closed book icon" />
-                <img src="./assets/closed-book.svg" alt="closed book icon" />
-                <img src="./assets/closed-book.svg" alt="closed book icon" />
-              </div>
-            </div>
-          </div>
-
-          <!-- grid item 4 -->
-          <div class="skills__grid_item"></div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <!--------------------------------- 
-      Projects - Dự Án
-    ----------------------------------->
-    <section class="projects__section" id="ProjectContainer">
-      <div class="container projects_container">
-        <!-- header -->
-        <div class="section__header">
-          <h1 class="section__title" data-i18n="projectsTitle">
-            Đồ Án Thực Chiến
-          </h1>
-          <p class="section__description" data-i18n="projectsDescription">
-            Bộ sưu tập dự án thực tập tại trường này giúp mình củng cố và hoàn
-            thiện những kỹ năng kỹ thuật cũng như khả năng giải quyết vấn đề một
-            cách sáng tạo.
-          </p>
-        </div>
-
-        <!-- cards -->
-        <div class="projects__cards_container">
-          <a
-            href="https://may-nghe-nhac.vercel.app/nghe_nhac/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div class="projects_cards">
-              <div class="projects__cards_wrapper">
-                <img
-                  src="./assets/project1.jpg"
-                  alt="project1"
-                  class="projects__cards_img"
-                />
-              </div>
-              <div class="projects__cards_titles">
-                <h4 data-i18n="projectLabel1">dự án 1</h4>
-                <h3 data-i18n="projectName1">Music Player</h3>
-              </div>
-            </div>
-          </a>
-
-          <a
-            href="https://shop-pe-sooty.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div class="projects_cards">
-              <div class="projects__cards_wrapper">
-                <img
-                  src="./assets/project2.jpg"
-                  alt="project1"
-                  class="projects__cards_img"
-                />
-              </div>
-              <div class="projects__cards_titles">
-                <h4 data-i18n="projectLabel2">dự án 2</h4>
-                <h3 data-i18n="projectName2">My Shope</h3>
-              </div>
-            </div>
-          </a>
-
-          <a
-            href="https://onepape.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div class="projects_cards">
-              <div class="projects__cards_wrapper">
-                <img
-                  src="./assets/project3.jpg"
-                  alt="project1"
-                  class="projects__cards_img"
-                />
-              </div>
-              <div class="projects__cards_titles">
-                <h4 data-i18n="projectLabel3">dự án 3</h4>
-                <h3 data-i18n="projectName3">The Band</h3>
-              </div>
-            </div>
-          </a>
-          <a
-            href="https://quanlylophoc-f7a9c.firebaseapp.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div class="projects_cards">
-              <div class="projects__cards_wrapper">
-                <img
-                  src="./assets/project4.jpg"
-                  alt="project1"
-                  class="projects__cards_img"
-                />
-              </div>
-              <div class="projects__cards_titles">
-                <h4 data-i18n="projectLabel4">dự án 4</h4>
-                <h3 data-i18n="projectName4">Quan Ly Lop Hoc</h3>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!--------------------------------- 
-      Footer
-    ----------------------------------->
     <footer>
-      <div class="container">
-        <p data-i18n="footerText">© DUCPHU's Portfolio</p>
+      <div class="container footer-content">
+        <p>© <span id="current-year">2026</span> Lương Đức Phú</p>
+        <a href="#top">
+          <span data-i18n="backToTop">Về đầu trang</span>
+          <span aria-hidden="true">↑</span>
+        </a>
       </div>
     </footer>
+
     <script>
       const translations = {
         vi: {
-          documentTitle: "DucPhu Portfolio",
-          headerBadgePrimary: "Lập trình web, mobile app",
-          headerBadgeSecondary: "Fullstack developer",
-          headerIntroPrefix: "Mong muốn ứng tuyển vị trí",
-          headerIntroSuffix: "trong lĩnh vực phát triển web và mobile apps.",
-          contactTitle: "Thông Tin Liên Hệ",
-          emailLabel: "Gửi email cho mình tại:",
-          phoneLabel: "Gọi cho mình tại:",
-          aboutTitle: "Giới Thiệu Bản Thân",
-          aboutDescription:
-            "Xin chào! Mình là sinh viên năm cuối trường đại học Ngoại Ngữ Và Tin Học. Mình có niềm đam mê với công việc lập trình và vô cùng yêu thích việc tạo ra các trang web và mobile app hiện đại và có tính ứng dụng cao.",
+          documentTitle: "Lương Đức Phú | Front-end Developer",
+          metaDescription:
+            "Portfolio của Lương Đức Phú — Front-end Developer tại TP. Hồ Chí Minh, tập trung vào giao diện responsive, JavaScript, React và Firebase.",
+          skipLink: "Bỏ qua điều hướng",
+          navJourney: "Kinh nghiệm",
+          navSkills: "Kỹ năng",
+          navProjects: "Dự án",
+          navContact: "Liên hệ",
+          heroEyebrow: "Sẵn sàng cho cơ hội Front-end Fresher",
+          heroRole: "Front-end Developer",
+          heroDescription:
+            "Mình xây dựng giao diện web responsive, dễ sử dụng và có hiệu năng tốt bằng HTML, CSS, JavaScript và React.",
+          viewProjects: "Xem dự án",
           downloadCv: "Tải CV",
-          viewProjects: "Xem Dự Án",
-          skillsTitle: "Kỹ năng & Chuyên môn",
+          factExperience: "năm thực hành dự án",
+          factProjects: "demo đang hoạt động",
+          factLocation: "Việt Nam",
+          portraitNote:
+            "Tập trung vào trải nghiệm web rõ ràng, responsive và thực tế.",
+          journeyEyebrow: "Kinh nghiệm & học vấn",
+          journeyTitle: "Nền tảng để làm ra sản phẩm tốt.",
+          journeyDescription:
+            "Kết hợp kinh nghiệm tại doanh nghiệp với nền tảng lập trình website và mobile tại HUFLIT.",
+          experienceLabel: "Kinh nghiệm",
+          experienceCompany: "Quoc Bao Software Company Limited",
+          experienceRole: "Front-end Developer",
+          experiencePoint1:
+            "Tham gia xây dựng giao diện web responsive trên nhiều kích thước màn hình.",
+          experiencePoint2:
+            "Hỗ trợ tối ưu hiệu năng website và triển khai SEO cơ bản.",
+          educationLabel: "Học vấn",
+          present: "Hiện tại",
+          educationSchool: "Đại học Ngoại ngữ – Tin học TP.HCM (HUFLIT)",
+          educationProgram: "Lập trình Website & Mobile",
+          educationResult: "Kết quả học tập: Khá (Good)",
+          skillsEyebrow: "Năng lực cốt lõi",
+          skillsTitle: "Đúng công cụ cho một giao diện chắc chắn.",
           skillsDescription:
-            "Fullstack developer với 1+ năm làm dự án cá nhân. Vững HTML, CSS, JavaScript, React và UX/UI responsive. Có kiến thức REST API và backend với PHP, DB, Node.js.",
-          toolsTitle: "Công cụ & Công nghệ",
-          toolsDescription:
-            "Thành thạo nhiều công cụ lập trình web hiện đại, có kinh nghiệm xây dựng các ứng dụng web tương tác, thân thiện với người dùng và đam mê viết mã sạch, dễ bảo trì.",
-          softSkillsTitle: "Kỹ Năng Mềm",
-          softSkillsDescription:
-            "Kỹ năng giao tiếp, cộng tác, và giải quyết vấn đề xuất sắc, với thái độ chủ động và ham học hỏi, dễ dàng thích nghi trong môi trường làm việc nhóm năng động.",
-          softSkill1: "Giao tiếp chuyên nghiệp",
-          softSkill2: "Quản lý thời gian hiệu quả",
-          softSkill3: "Đáng tin cậy",
-          softSkill4: "Ham học hỏi",
-          projectsTitle: "Đồ Án Thực Chiến",
+            "Trọng tâm là front-end; backend và công cụ triển khai hỗ trợ mình hoàn thiện luồng sản phẩm từ giao diện đến dữ liệu.",
+          frontendTitle: "Front-end chính",
+          frontendSkills:
+            "HTML5 · CSS3 · JavaScript · React · Tailwind CSS · Responsive UI",
+          backendTitle: "Backend nền tảng",
+          backendSkills: "PHP · Node.js · REST API · Firebase · MySQL",
+          workflowTitle: "Công cụ & quy trình",
+          workflowSkills:
+            "Git · GitHub · Vercel · Postman · UI/UX · SEO cơ bản",
+          skillsNote:
+            "Mình coi khả năng học nhanh, phối hợp nhóm và giải quyết vấn đề là một phần của năng lực kỹ thuật.",
+          projectsEyebrow: "Dự án nổi bật",
+          projectsTitle: "Sản phẩm thật, demo đang chạy.",
           projectsDescription:
-            "Bộ sưu tập dự án thực tập tại trường này giúp mình củng cố và hoàn thiện những kỹ năng kỹ thuật cũng như khả năng giải quyết vấn đề một cách sáng tạo.",
-          projectLabel1: "dự án 1",
-          projectLabel2: "dự án 2",
-          projectLabel3: "dự án 3",
-          projectLabel4: "dự án 4",
-          projectLabel5: "dự án 5",
-          projectLabel6: "dự án 6",
-          projectName1: "Music Player",
-          projectName2: "My Shope",
-          projectName3: "The Band",
-          projectName4: "Quan Ly Lop Hoc",
-          projectName5: "thiết kế trang doanh nghiệp",
-          projectName6: "Thiết kế web",
-          footerText: "© DUCPHU's Portfolio",
+            "Ba dự án đang hoạt động thể hiện quá trình tiến bộ từ landing page responsive đến PWA và ứng dụng dữ liệu thời gian thực.",
+          musicDescription:
+            "Trình phát nhạc có thể cài đặt, hỗ trợ nghe ngoại tuyến, danh sách phát và phím tắt để điều khiển nhanh.",
+          classflowDescription:
+            "Ứng dụng quản lý lớp học với đăng nhập OTP, giao bài, quản lý học viên và trò chuyện theo thời gian thực.",
+          bandDescription:
+            "Landing page âm nhạc responsive với điều hướng theo section, lịch diễn, biểu mẫu liên hệ và menu dành cho mobile.",
+          openProject: "Xem dự án",
+          contactEyebrow: "Cùng làm việc",
+          contactTitle: "Bạn đang tìm một Front-end Fresher chủ động?",
+          contactDescription:
+            "Mình sẵn sàng trao đổi về cơ hội thực tập hoặc vị trí Front-end Developer tại TP. Hồ Chí Minh.",
+          location: "TP. Hồ Chí Minh, Việt Nam",
+          backToTop: "Về đầu trang",
         },
         en: {
-          documentTitle: "DucPhu Portfolio | English",
-          headerBadgePrimary: "Web and mobile app development",
-          headerBadgeSecondary: "Fullstack developer",
-          headerIntroPrefix: "Seeking a",
-          headerIntroSuffix: "position in web and mobile app development.",
-          contactTitle: "Contact Information",
-          emailLabel: "Email me at:",
-          phoneLabel: "Call me at:",
-          aboutTitle: "About Me",
-          aboutDescription:
-            "Hello! I am a final-year student at the University of Foreign Languages and Informatics. I am passionate about programming and truly enjoy building modern, practical websites and mobile apps.",
+          documentTitle: "Luong Duc Phu | Front-end Developer",
+          metaDescription:
+            "Portfolio of Luong Duc Phu — a Front-end Developer in Ho Chi Minh City focused on responsive interfaces, JavaScript, React, and Firebase.",
+          skipLink: "Skip navigation",
+          navJourney: "Experience",
+          navSkills: "Skills",
+          navProjects: "Projects",
+          navContact: "Contact",
+          heroEyebrow: "Open to Front-end Fresher opportunities",
+          heroRole: "Front-end Developer",
+          heroDescription:
+            "I build responsive, accessible, and performant web interfaces with HTML, CSS, JavaScript, and React.",
+          viewProjects: "View projects",
           downloadCv: "Download CV",
-          viewProjects: "View Projects",
-          skillsTitle: "Skills & Expertise",
+          factExperience: "year of project practice",
+          factProjects: "live project demos",
+          factLocation: "Viet Nam",
+          portraitNote:
+            "Focused on clear, responsive, and practical web experiences.",
+          journeyEyebrow: "Experience & education",
+          journeyTitle: "A foundation for building better products.",
+          journeyDescription:
+            "Combining professional experience with a Website and Mobile Programming foundation from HUFLIT.",
+          experienceLabel: "Experience",
+          experienceCompany: "Quoc Bao Software Company Limited",
+          experienceRole: "Front-end Developer",
+          experiencePoint1:
+            "Contributed to responsive web interfaces across multiple screen sizes.",
+          experiencePoint2:
+            "Supported website performance optimization and basic SEO implementation.",
+          educationLabel: "Education",
+          present: "Present",
+          educationSchool:
+            "Ho Chi Minh City University of Foreign Languages and Information Technology (HUFLIT)",
+          educationProgram: "Website & Mobile Programming",
+          educationResult: "Academic level: Good",
+          skillsEyebrow: "Core capabilities",
+          skillsTitle: "The right tools for dependable interfaces.",
           skillsDescription:
-            "A fullstack developer with 1+ year of personal project experience. Strong in HTML, CSS, JavaScript, React, and responsive UX/UI. Familiar with REST APIs and backend development using PHP, databases, and Node.js.",
-          toolsTitle: "Tools & Technologies",
-          toolsDescription:
-            "Proficient with a range of modern web development tools, experienced in building interactive, user-friendly web applications, and committed to writing clean, maintainable code.",
-          softSkillsTitle: "Soft Skills",
-          softSkillsDescription:
-            "Strong communication, collaboration, and problem-solving skills, with a proactive mindset, a willingness to learn, and the ability to adapt well in dynamic team environments.",
-          softSkill1: "Professional communication",
-          softSkill2: "Effective time management",
-          softSkill3: "Reliable",
-          softSkill4: "Eager to learn",
-          projectsTitle: "Featured Projects",
+            "Front-end is my focus; backend fundamentals and deployment tools help me complete the flow from interface to data.",
+          frontendTitle: "Core front-end",
+          frontendSkills:
+            "HTML5 · CSS3 · JavaScript · React · Tailwind CSS · Responsive UI",
+          backendTitle: "Backend foundations",
+          backendSkills: "PHP · Node.js · REST API · Firebase · MySQL",
+          workflowTitle: "Tools & workflow",
+          workflowSkills: "Git · GitHub · Vercel · Postman · UI/UX · Basic SEO",
+          skillsNote:
+            "I consider quick learning, teamwork, and problem-solving part of my technical toolkit.",
+          projectsEyebrow: "Selected work",
+          projectsTitle: "Real builds, live demos.",
           projectsDescription:
-            "This collection of academic internship projects helped me strengthen my technical skills and improve my ability to solve problems creatively.",
-          projectLabel1: "project 1",
-          projectLabel2: "project 2",
-          projectLabel3: "project 3",
-          projectLabel4: "project 4",
-          projectLabel5: "project 5",
-          projectLabel6: "project 6",
-          projectName1: "Music Player",
-          projectName2: "My Shope",
-          projectName3: "The Band",
-          projectName4: "Quan Ly Lop Hoc",
-          projectName5: "business website design",
-          projectName6: "web design",
-          footerText: "© DUCPHU's Portfolio",
+            "Three active projects show my progression from responsive landing pages to a PWA and a real-time data application.",
+          musicDescription:
+            "An installable music player with offline listening, playlist controls, and keyboard shortcuts for quick navigation.",
+          classflowDescription:
+            "A classroom management app with OTP sign-in, assignments, student management, and real-time chat.",
+          bandDescription:
+            "A responsive music landing page with section navigation, tour dates, a contact form, and a mobile menu.",
+          openProject: "View project",
+          contactEyebrow: "Let’s work together",
+          contactTitle: "Looking for a proactive Front-end Fresher?",
+          contactDescription:
+            "I am open to internship and Front-end Developer opportunities in Ho Chi Minh City.",
+          location: "Ho Chi Minh City, Viet Nam",
+          backToTop: "Back to top",
         },
       };
 
       const languageStorageKey = "portfolioLanguage";
       const translatableNodes = document.querySelectorAll("[data-i18n]");
       const languageButtons = document.querySelectorAll("[data-lang-switch]");
+      const descriptionMeta = document.querySelector(
+        'meta[name="description"]',
+      );
+      const ogTitle = document.querySelector('meta[property="og:title"]');
+      const ogDescription = document.querySelector(
+        'meta[property="og:description"]',
+      );
 
       function setLanguage(lang) {
         const selectedLanguage = Object.prototype.hasOwnProperty.call(
           translations,
-          lang
+          lang,
         )
           ? lang
           : "vi";
@@ -646,7 +598,6 @@
 
         translatableNodes.forEach((node) => {
           const key = node.dataset.i18n;
-
           if (Object.prototype.hasOwnProperty.call(dictionary, key)) {
             node.textContent = dictionary[key];
           }
@@ -654,10 +605,12 @@
 
         document.title = dictionary.documentTitle;
         document.documentElement.lang = selectedLanguage;
+        descriptionMeta?.setAttribute("content", dictionary.metaDescription);
+        ogTitle?.setAttribute("content", dictionary.documentTitle);
+        ogDescription?.setAttribute("content", dictionary.metaDescription);
 
         languageButtons.forEach((button) => {
           const isActive = button.dataset.langSwitch === selectedLanguage;
-
           button.classList.toggle("is-active", isActive);
           button.setAttribute("aria-pressed", String(isActive));
         });
@@ -668,7 +621,6 @@
       }
 
       let savedLanguage = "vi";
-
       try {
         savedLanguage = localStorage.getItem(languageStorageKey) || "vi";
       } catch (error) {}
@@ -680,6 +632,31 @@
       });
 
       setLanguage(savedLanguage);
+      document.querySelector("#current-year").textContent =
+        new Date().getFullYear();
+
+      const revealItems = document.querySelectorAll(".reveal");
+      const reducedMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)",
+      ).matches;
+
+      if (reducedMotion || !("IntersectionObserver" in window)) {
+        revealItems.forEach((item) => item.classList.add("is-visible"));
+      } else {
+        const observer = new IntersectionObserver(
+          (entries, currentObserver) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                currentObserver.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.16 },
+        );
+
+        revealItems.forEach((item) => observer.observe(item));
+      }
     </script>
   </body>
 </html>
